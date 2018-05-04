@@ -98,6 +98,7 @@ namespace Interfaz
                 tip.Codigo = Convert.ToInt32(dgvtipocliente.CurrentRow.Cells["Codigo"].Value.ToString());
                 if (tip.Eliminar() == true)
                 {
+                    CargarTipos();
                     MENSAJE_V2.Show("Tipo Eliminado", MENSAJE_V2.AlertType.success);
                 }
                 else

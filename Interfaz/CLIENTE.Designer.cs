@@ -35,13 +35,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btneliminar = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvcliente = new System.Windows.Forms.DataGridView();
-            this.btneliminar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -108,6 +108,16 @@
             this.panel2.Size = new System.Drawing.Size(1000, 62);
             this.panel2.TabIndex = 162;
             // 
+            // btneliminar
+            // 
+            this.btneliminar.Location = new System.Drawing.Point(907, 20);
+            this.btneliminar.Name = "btneliminar";
+            this.btneliminar.Size = new System.Drawing.Size(90, 34);
+            this.btneliminar.TabIndex = 170;
+            this.btneliminar.Text = "[Eliminar]";
+            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
+            // 
             // btnmodificar
             // 
             this.btnmodificar.Location = new System.Drawing.Point(722, 20);
@@ -161,6 +171,7 @@
             this.dgvcliente.AllowUserToAddRows = false;
             this.dgvcliente.AllowUserToDeleteRows = false;
             this.dgvcliente.AllowUserToResizeRows = false;
+            this.dgvcliente.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -179,16 +190,6 @@
             this.dgvcliente.Size = new System.Drawing.Size(1000, 433);
             this.dgvcliente.TabIndex = 164;
             this.dgvcliente.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvcliente_CellMouseDoubleClick);
-            // 
-            // btneliminar
-            // 
-            this.btneliminar.Location = new System.Drawing.Point(907, 20);
-            this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(90, 34);
-            this.btneliminar.TabIndex = 170;
-            this.btneliminar.Text = "[Eliminar]";
-            this.btneliminar.UseVisualStyleBackColor = true;
-            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // CLIENTE
             // 

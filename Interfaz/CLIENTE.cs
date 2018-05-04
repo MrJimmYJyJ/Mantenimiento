@@ -193,6 +193,7 @@ namespace Interfaz
                 CLI.Codigo = Convert.ToInt64(dgvcliente.CurrentRow.Cells["Codigo"].Value.ToString());
                 if (CLI.Eliminar() == true)
                 {
+                    ListarClientes();
                     MENSAJE_V2.Show("Cliente Eliminado", MENSAJE_V2.AlertType.success);
                 }
                 else

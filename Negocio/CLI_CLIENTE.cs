@@ -112,7 +112,7 @@ namespace Negocio
         {
             try
             {
-                int filas = Datos.Sql.Ejecutar("CLI_CLIENTE_Eliminar", Dni);
+                int filas = Datos.Sql.Ejecutar("CLI_CLIENTE_Eliminar", Codigo);
                 return filas > 0 ? true : false;
             }
             catch (Exception)
