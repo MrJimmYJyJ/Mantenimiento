@@ -45,14 +45,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CLIENTE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CLIENTE.Designer.cs">
+      <DependentUpon>CLIENTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLI_AGRE_MODIFICAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLI_AGRE_MODIFICAR.Designer.cs">
+      <DependentUpon>CLI_AGRE_MODIFICAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLI_TIPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLI_TIPO.Designer.cs">
+      <DependentUpon>CLI_TIPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENSAJE_V2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENSAJE_V2.Designer.cs">
+      <DependentUpon>MENSAJE_V2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TIP_AGRE_MODIFICAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TIP_AGRE_MODIFICAR.Designer.cs">
+      <DependentUpon>TIP_AGRE_MODIFICAR.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CLIENTE.resx">
+      <DependentUpon>CLIENTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLI_AGRE_MODIFICAR.resx">
+      <DependentUpon>CLI_AGRE_MODIFICAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLI_TIPO.resx">
+      <DependentUpon>CLI_TIPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENSAJE_V2.resx">
+      <DependentUpon>MENSAJE_V2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +107,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TIP_AGRE_MODIFICAR.resx">
+      <DependentUpon>TIP_AGRE_MODIFICAR.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,6 +122,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidad\Entidad.csproj">
+      <Project>{4f7fad92-7783-45e9-a365-7016d69a5ff2}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{e57a8491-b77e-4305-b23d-d0564a7454be}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
